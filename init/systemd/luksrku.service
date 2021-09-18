@@ -1,0 +1,11 @@
+[Unit]
+Description=luksrku server
+
+[Service]
+User=luksrku
+Group=luksrku
+ExecStart=/usr/local/sbin/luksrku server -v /var/lib/luksrku/db.bin
+
+[Install]
+WantedBy=multi-user.target
+
